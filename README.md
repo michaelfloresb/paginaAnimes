@@ -8,7 +8,7 @@
 
 | Vista Principal (Catálogo) | Detalle de Anime (Multimedia & Descarga) | Agregar Anime | Agregar Proximo Anime |
 | :---: | :---: | :---: | :---: |
-| ![Home](public/Img/Screenshots/animes_home.jpg) | ![Detalles](public/Img/Screenshots/animes_detalles.jpg) |  ![Detalles](public/Img/Screenshots/animes_agregar_anime.jpg) |  ![Detalles](public/Img/Screenshots/animes_proximos.jpg) | 
+| ![Home](public/Img/Screenshots/animes_home.png) | ![Detalles](public/Img/Screenshots/animes_detalles.png) |  ![Detalles](public/Img/Screenshots/animes_agregar_anime.png) |  ![Detalles](public/Img/Screenshots/animes_proximos.png) | 
 ---
 
 ## 🚀 Características Principales
