@@ -1,0 +1,347 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Background-Color-Complemento);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+
+    background-color: var(--Background-Color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.inputContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.form h1 {
+    font-family: "Roboto Flex", sans-serif;
+    color: var(--Texto-Color);
+}
+
+.form label {
+    font-family: "Roboto Flex", sans-serif;
+    color: var(--Texto-Color);
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form input[type="text"] {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--Background-Color-Complemento);
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--Texto-Color);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--Boton-Primario);
+}
+
+.button:hover {
+    background-color: var(--Boton-Secundario);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*----------Anime Card-------------------*/
+
+
+.link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--Background-Color);
+    overflow: hidden;
+    border-radius: 10px;
+    width: 410px;
+    padding: 5px;
+    height: auto;
+    min-height: 450px;
+    justify-content: flex-start;
+    align-items: center;
+    animation: blur-in-expand 0.4s linear both;
+}
+
+@keyframes blur-in-expand {
+    0% {
+        transform: scale(0);
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+.imagenWrapper {
+    width: 400px;
+    height: 100%;
+    border: var(--Separadores) solid 1px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+
+}
+
+
+.imagenWrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.imagenWrapper:hover img {
+    animation: jello-vertical .9s linear both
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    40% {
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    50% {
+        transform: scale3d(.85, 1.15, 1)
+    }
+
+    65% {
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    75% {
+        transform: scale3d(.95, 1.05, 1)
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.imagen {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border: var(--Separadores) solid 1px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Para que la imagen cubra el espacio sin distorsionarse */
+    display: block;
+    /* Asegúrate de que la imagen sea un bloque */
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 250px;
+    /* Igual que la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #888;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+}
+
+.derecha {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+}
+
+.title {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Texto-Color);
+    font-size: 15px;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: var(--Background-Color-Complemento);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subTitle {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Texto-Color);
+
+    font-size: 15px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+
+
+.temporada {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Texto-Color-Complemento);
+    font-size: 15px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+
+.barraVisto,
+.barraNoVisto {
+    z-index: 1;
+    position: relative;
+    height: 20px;
+    width: 15%;
+    border-radius: 5px;
+}
+
+.barraVisto {
+
+    background-color: var(--Visto);
+}
+
+.barraNoVisto {
+    background-color: var(--NoVisto);
+}
+
+.categorias {
+
+    height: 100%;
+}
+
+
+.numeracion {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 5px;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: var(--Separadores);
+    font-family: "Roboto Flex", sans-serif;
+    color: var(--Texto-Color);
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.infoDownload {
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    border: var(--Separadores) solid 1px;
+    background-color: var(--Background-Color);
+    border-radius: 10px;
+    font-size: 10px;
+    min-height: 400px;
+}
+
+.comentarios {
+    color: var(--Texto-Color);
+    background-color: var(--Background-Color-Complemento);
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    font-family: "Roboto Flex", sans-serif
+}
+
+.opAndInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,63 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+}
+
+.contenedor:hover {
+    background-color: var(--Separadores);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.texto {
+    font-size: 18px;
+    color: var(--Texto-Color-Complemento);
+    font-family: "Concert one", sans-serif;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+
+}
+
+.textoActivo {
+    font-size: 18px;
+    color: var(--Texto-Color);
+    font-family: "Concert one", sans-serif;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.contenedorIcono {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icono {
+    font-size: 18px;
+    color: var(--Texto-Color-Complemento);
+    font-family: "Concert one", sans-serif;
+}
+
+.iconoActivo {
+    font-size: 18px;
+    color: var(--Texto-Color);
+    font-family: "Concert one", sans-serif;
+}

@@ -1,0 +1,78 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.enlace {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px;
+    background-color: var(--Separadores);
+}
+
+.enlace input {
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    color: var(--Texto-Color-Complemento);
+    background-color: transparent;
+}
+
+.enlace button {
+    border: none;
+    text-align: center;
+    height: 100%;
+    font-size: 12px;
+    color: var(--Texto-Color);
+    background-color: var(--Background-Color-Complemento);
+    box-shadow: 4px 4px var(--Boton-Temporada-Sombra);
+    border-radius: 10px;
+}
+
+.enlace button:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+
+    animation: jello-diagonal .9s linear both
+}
+
+
+
+.jello-diagonal {
+    animation: jello-diagonal .9s linear both
+}
+
+@keyframes jello-diagonal {
+    0% {
+        transform: skew(0deg 0deg)
+    }
+
+    30% {
+        transform: skew(25deg 25deg)
+    }
+
+    40% {
+        transform: skew(-15deg, -15deg)
+    }
+
+    50% {
+        transform: skew(15deg, 15deg)
+    }
+
+    65% {
+        transform: skew(-5deg, -5deg)
+    }
+
+    75% {
+        transform: skew(5deg, 5deg)
+    }
+
+    100% {
+        transform: skew(0deg 0deg)
+    }
+}

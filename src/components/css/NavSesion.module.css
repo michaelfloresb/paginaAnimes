@@ -1,0 +1,184 @@
+@import url(Fuentes.css);
+@import url(General.css);
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+
+.ingresar:hover {
+    cursor: pointer;
+}
+
+.ingresar p {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: "Concert One", sans-serif;
+    font-size: 30px;
+
+
+}
+
+.ingresar i {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.activo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    color: var(--Texto-Color-Complemento);
+}
+
+.noActivo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    color: var(--Separadores);
+}
+
+.noActivo p,
+.activo p {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 25px;
+}
+
+.noActivo i,
+.activo i {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.activo:hover,
+.noActivo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*__________________Div Sesion________________________*/
+
+
+.divSesion,
+.divSesionBarraExpandida {
+    border: solid var(--Separadores) 1px;
+    position: absolute;
+    background-color: var(--Background-Color);
+    z-index: 10;
+    border-radius: 15px;
+    box-shadow: 4px 4px var(--Secundario-Color);
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divSesion {
+    top: 160px;
+    left: 70px;
+}
+
+.divSesionBarraExpandida {
+    top: 160px;
+    left: 260px;
+
+}
+
+.formulario {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    color: var(--Texto-Color);
+    font-size: 25px;
+    font-family: "Concert One", sans-serif
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    border: solid var(--Secundario-Color);
+    box-sizing: border-box;
+    font-size: 20px;
+    color: var(--Texto-Color-Complemento);
+    font-family: "Roboto Flex", sans-serif;
+    background-color: var(--Separadores);
+}
+
+.btnIniciar,
+.btnRegistro {
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 25px;
+    box-sizing: border-box;
+    font-family: "Concert One", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnIniciar {
+    background-color: var(--Boton-Primario);
+    color: var(--Texto-Color);
+}
+
+.btnRegistro {
+    background-color: var(--Boton-Terciario);
+    color: var(--Texto-Color);
+}
+
+.btnIniciar:hover {
+    cursor: pointer;
+    background-color: var(--Boton-Secundario);
+    color: var(--Texto-Color);
+}
+
+.btnRegistro:hover {
+    cursor: pointer;
+    background-color: var(--Boton-Cuaternario);
+    color: var(--Texto-Color);
+
+}

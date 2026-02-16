@@ -1,0 +1,13 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.estilo {
+    color: var(--Texto-Color);
+    border-radius: 10px;
+    margin: 5px 0;
+
+}
+
+.estilo span {
+    font-size: 18px;
+}

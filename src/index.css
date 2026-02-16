@@ -1,0 +1,25 @@
+@import url('./components/css/General.css');
+@import url('./components/css/Fuentes.css');
+
+body {
+  margin: 0;
+  font-family: "Concert One", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  /*background: linear-gradient(100deg, var(--Background-Color) 0%, var(--Background-Color-Complemento) 100%);
+  */
+  background-color: var(--Background-Color);
+}
+
+
+code {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

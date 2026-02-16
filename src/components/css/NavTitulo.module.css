@@ -1,0 +1,46 @@
+@import url(./Fuentes.css);
+@import url(./General.css);
+
+
+.divTitulo {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    width: 100%;
+    font-size: 40px;
+    color: var(--Texto-Color);
+}
+
+.divTitulo img {
+    max-width: 60px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.titulo:hover {
+    transform: scale(1.05);
+    color: var(--Texto-Color-Complemento);
+}
+
+
+@media screen and (max-width: 1040px) {
+    .titulo p {
+        display: none
+    }
+
+    .titulo {
+        width: 80px;
+    }
+}

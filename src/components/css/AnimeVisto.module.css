@@ -1,0 +1,49 @@
+.estilos label:hover{
+    cursor: pointer;
+   
+}
+.estilos{
+    padding: 20px 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.estilos label{
+    color: var(--No-Visto);
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+}
+
+.estilos input{
+    display: none;
+}
+.estilos input:hover{
+   
+    background-color: var(--No-Visto);
+}
+.estilos label::before{
+    content: ' ';
+    border: solid var(--No-Visto) 2px;
+    border-radius: 100%;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+.estilos input:checked + label::before{
+    content: ' ';
+    border: solid var(--Visto) 2px;
+    background-color: var(--Visto-Complemento);
+    border-radius: 100%;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+.estilos input:checked + label{
+    color: var(--Visto);
+}

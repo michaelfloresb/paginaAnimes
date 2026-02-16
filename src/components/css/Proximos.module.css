@@ -1,0 +1,79 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+
+.addProximo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.addProximo input {
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--Background-Color-Complemento);
+    border: none;
+    color: var(--Texto-Color);
+}
+
+.boton {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Boton-Primario);
+    color: var(--Texto-Color);
+    font-weight: bold;
+
+
+}
+
+.boton:hover {
+    background-color: var(--Boton-Secundario);
+    cursor: pointer;
+
+}
+
+
+.proximos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.proximo {
+    background-color: var(--Background-Color-Complemento);
+    width: 260px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.proximo img {
+    width: 250px;
+    max-height: 500px;
+    border-radius: 10px;
+}

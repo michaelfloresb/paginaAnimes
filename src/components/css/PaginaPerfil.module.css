@@ -1,0 +1,330 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.principal {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar img {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navbar:hover,
+.navbar h1:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+    color: var(--Texto-Color-Complemento);
+}
+
+.contPrincipal {
+    width: 100%;
+    height: 93vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contPrincipal::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.contPrincipal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--Principal-Color);
+    border-radius: 10px;
+}
+
+.contPrincipal::-webkit-scrollbar-thumb {
+    background: var(--Secundario-Color);
+    border-radius: 10px;
+}
+
+.divImgPerfil,
+.divImgSesion,
+.divDatos {
+    border: solid var(--Secundario-Color) 6px;
+    border-radius: 15px;
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.divImgPerfil img,
+.divImgSesion img {
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 700px;
+}
+
+.divImgPerfil p,
+.divImgSesion p {
+    color: var(--Texto-Color);
+    font-size: 25px;
+}
+
+.divImgPerfil button,
+.divImgSesion button,
+.btnSeleccionarPerfil,
+.btnSeleccionarSesion,
+.btnGuardarCambios {
+    color: var(--Texto-Color);
+    font-size: 25px;
+    border: none;
+    color: var(--Boton-Temporada-Letras);
+    background-color: var(--Boton-Temporada-Fondo);
+    box-shadow: 4px 4px var(--Boton-Temporada-Sombra);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Concert One", sans-serif;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.divImgPerfil button:hover,
+.divImgSesion button:hover,
+.btnSeleccionarPerfil:hover,
+.btnSeleccionarSesion:hover,
+.btnGuardarCambios:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--Boton-Titulo-Letras);
+    background-color: var(--Boton-Titulo-Fondo);
+    box-shadow: 4px 4px var(--Boton-Titulo-Sombra);
+}
+
+
+
+
+
+
+
+
+/*_______________________Imagenes Perfil y Sesion__________________*/
+
+.divImagenesPerfil,
+.divImagenesSesion {
+    position: absolute;
+    height: 80%;
+    width: 60%;
+    border: solid var(--Secundario-Color) 6px;
+    border-radius: 15px;
+    top: 70px;
+    background-color: var(--Background-Color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.btnCerrarPerfil,
+.btnCerrarSesion {
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Texto-Color);
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.btnCerrarPerfil i,
+.btnCerrarSesion i {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.btnCerrarPerfil:hover,
+.btnCerrarSesion:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+    color: var(--No-Visto);
+}
+
+/*___________Div perfiles_________________*/
+
+.divPerfiles,
+.divSesiones {
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5px;
+}
+
+.divPerfiles {
+    overflow-X: scroll;
+    overflow-y: hidden;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.divSesiones {
+    overflow-X: hidden;
+    overflow-y: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.divPerfil,
+.divSesion,
+.divPerfilSeleccionado,
+.divSesionSeleccionado {
+    border: solid var(--Secundario-Color);
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPerfil,
+.divPerfilSeleccionado {
+    height: 100%;
+}
+
+.divPerfil img,
+.divPerfilSeleccionado img {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.divPerfilSeleccionado {
+    background-color: var(--Secundario-Color);
+}
+
+.divPerfil:hover,
+.divSesione:hover,
+.divPerfilSeleccionado:hover,
+.divSesionSeleccionado:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.divSesion,
+.divSesionSeleccionado {
+    width: 250px;
+    height: 250px;
+}
+.divSesion img,
+.divSesionSeleccionado img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.divSesionSeleccionado {
+    background-color: var(--Secundario-Color);
+}
+
+/*_________________Scrollbar________________*/
+
+.divPerfiles::-webkit-scrollbar,
+.divSesiones::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.divPerfiles::-webkit-scrollbar-track,
+.divSesiones::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--Principal-Color);
+    border-radius: 10px;
+}
+
+.divPerfiles::-webkit-scrollbar-thumb,
+.divSesiones::-webkit-scrollbar-thumb {
+    background: var(--Secundario-Color);
+    border-radius: 10px;
+}
+
+/*______________________DATOS______________*/
+
+.divDatos hr {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.divDatos label {
+    color: var(--Texto-Color);
+    font-size: 25px;
+}
+
+.divDatos input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 25px;
+    border-radius: 15px;
+    padding-left: 10px;
+    color: var(--Texto-Color);
+    font-family: "Concert One", sans-serif;
+}
+
+.divDatosCambios {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    .divImagenesPerfil,
+    .divImagenesSesion {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+/*_____________background blur_____________*/
+
+.background{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.721);
+}

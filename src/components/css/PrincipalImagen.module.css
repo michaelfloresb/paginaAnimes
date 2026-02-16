@@ -1,0 +1,16 @@
+@import url(Fuentes.css);
+@import url(General.css);
+
+
+.principalImagen {
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principalImagen img {
+    width: 100%;
+}

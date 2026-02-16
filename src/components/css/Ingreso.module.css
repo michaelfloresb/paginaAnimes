@@ -1,0 +1,76 @@
+@import url(General.css);
+
+
+.content{
+    max-width: 400px;
+    height: 350px;
+    font-size: 20px;
+    position: absolute;
+    background-color: var(--Background-Color-Complemento);
+    border: solid var(--Secundario-Color);
+    color: var(--Texto-Color);
+    border-radius: 15px;
+    z-index: 20;
+    padding: 10px;
+    top: 70px;
+    right: 25px;
+    box-shadow: 4px 4px var(--Secundario-Color);
+}
+h1{
+    color: var(--Texto-Color);
+    font-size: 35px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--Texto-Color);
+}
+.formulario input[type="text"], input[type="password"]{
+    height: 40px;
+    border-radius: 20px;
+    border:solid var(--Secundario-Color);
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.formulario input[type="submit"]{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.btnIniciar{
+    background-color: var(--Boton-Titulo-Fondo);
+    color: var(--Boton-Titulo-Letras);
+    box-shadow: 4px 4px 4px var(Boton-Titulo-Sombra);
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btnRegistro{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+}
+.btnRegistro p{
+    width: 100%;
+    margin-top: 10px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Boton-Temporada-Fondo);
+    color: var(--Boton-Temporada-Letras);
+    box-shadow: 4px 4px 4px var(--Boton-Temporada-Sombra);
+}
+
+
+.btnIniciar:hover{
+    background-color: var(Boton-Titulo-Sombra);
+    box-shadow: 4px 4px var(--Boton-Titulo-Fondo);
+}
+.btnRegistro p:hover{
+    background-color: var(--Boton-Temporada-Sombra);
+    box-shadow: 4px 4px var(--Boton-Temporada-Fondo);
+}

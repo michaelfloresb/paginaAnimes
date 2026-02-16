@@ -1,0 +1,23 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.titulo {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  background-color: var(--Separadores);
+  border-radius: 10px;
+  width: 100%;
+}
+
+span {
+  font-size: 15px;
+  color: var(--Texto-Color);
+  padding: 5px;
+  text-transform: uppercase;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}

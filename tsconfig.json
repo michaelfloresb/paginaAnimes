@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",         // ⚠️ Esto es obligatorio
+    "module": "ESNext",
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "ES6", "ES2015.Promise", "ES2015.Iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["react", "react-dom"] // ✅ Asegúrate de tener las definiciones de tipo de React
+  },
+  "include": ["src"],         // ✅ Asegúrate que apunte al lugar correcto
+  "exclude": ["node_modules"]   // ✅ Excluye node_modules para un build más rápido
+}

@@ -1,0 +1,405 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.divPrincipal {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--Background-Color-Complemento);
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+
+.divPrincipal::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.divPrincipal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--Separadores);
+    border-radius: 10px;
+}
+
+.divPrincipal::-webkit-scrollbar-thumb {
+    background: var(--Separadores);
+    border-radius: 10px;
+}
+
+
+/*______________________Izquierda___________*/
+
+.izquierda {
+    width: 500px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--Background-Color);
+    border-right: var(--Separadores) solid 1px;
+    padding-bottom: 20px;
+}
+
+
+
+/*________________________Navbar_______________________*/
+.ContTitulo {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: var(--Separadores) solid 1px;
+}
+
+.ContTitulo img {
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+}
+
+.divTitulo {
+    color: var(--Texto-Color);
+}
+
+.divTitulo:hover {
+    color: var(--Texto-Color-Complemento);
+    transform: scale(1.09);
+}
+
+
+
+/*===================Titulos========================================*/
+
+.divTitulos {
+    border-bottom: var(--Separadores) solid 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+/*=================Imagen Anime=====================*/
+
+.imagenAnime {
+    border: solid 5px var(--Secundario-Color);
+    width: 95%;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    border: solid var(--Separadores) 1px;
+
+}
+
+/*====================Logo==============================*/
+
+.logo {
+    width: 95%;
+    max-height: 150px;
+    border: solid 1px var(--Separadores);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*=====================Id y temporada ========================*/
+.idTemp {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: var(--Separadores) solid 1px;
+    border-top: var(--Separadores) solid 1px;
+    padding: 10px;
+}
+
+.idTemp div {
+    min-width: 50px;
+    max-width: 250px;
+
+}
+
+
+/*_____________CheackBox_________________*/
+.check input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.labelCheck {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 30px;
+    background: var(--NoVisto);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.labelCheck:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--Texto-Color);
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.check input:checked+.labelCheck {
+    background: var(--Visto);
+}
+
+.check input:checked+.labelCheck:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: var(--Texto-Color);
+}
+
+.labelCheck:active:after {
+    width: 100px;
+}
+
+
+/*_____________________Derecha____________*/
+
+.derecha {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    /* ← Esto es CLAVE en layouts con flexbox */
+
+    justify-content: space-between;
+}
+
+
+/*====================Characters===================================*/
+
+.divCharacters {
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: auto;
+    padding: 10px 16px;
+    /* <- padding lateral añadido */
+    gap: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: hidden;
+    min-height: 150px;
+    scroll-behavior: smooth;
+    border-bottom: solid var(--Separadores) 1px;
+}
+
+.divCharacters::-webkit-scrollbar {
+    height: 6px;
+    /* Altura del scroll horizontal */
+}
+
+.divCharacters::-webkit-scrollbar-track {
+    background: var(--Background-Color-Complemento);
+    border-radius: 4px;
+}
+
+.divCharacters::-webkit-scrollbar-thumb {
+    background: var(--Separadores);
+    border-radius: 4px;
+}
+
+.divCharacters::-webkit-scrollbar-thumb:hover {
+    background: var(--Background-Color);
+}
+
+.characterCard {
+    width: 100px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.characterCard:hover {
+    animation: vibrate 1.5s linear both;
+}
+
+.characterImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.characterText {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 13px;
+}
+
+
+/*=============================Descarga============================*/
+
+.openingAndInfo {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.separador {
+    border-bottom: var(--Separadores) solid 1px;
+}
+
+
+
+
+.info {
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    border: var(--Separadores) solid 1px;
+    background-color: var(--Background-Color);
+    border-radius: 10px;
+    font-size: 10px;
+    height: 400px;
+}
+
+.comentarios {
+    color: var(--Texto-Color);
+    background-color: var(--Background-Color-Complemento);
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    font-family: "Roboto Flex", sans-serif
+}
+
+.opening {
+    width: 600px;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pictures {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    background-color: var(--Background-Color-Complemento);
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+
+.vibrate {
+    animation: vibrate 1.5s linear both
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0)
+    }
+
+    20% {
+        transform: translate(-2px, 2px)
+    }
+
+    40% {
+        transform: translate(-2px, -2px)
+    }
+
+    60% {
+        transform: translate(2px, 2px)
+    }
+
+    80% {
+        transform: translate(2px, -2px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+.pictures img:hover {
+    border-radius: 10px;
+    animation: vibrate 1.5s linear both;
+    cursor: pointer;
+}
+
+.pictures::-webkit-scrollbar {
+    height: 6px;
+    /* Altura del scroll horizontal */
+}
+
+.pictures::-webkit-scrollbar-track {
+    background: var(--Background-Color-Complemento);
+    border-radius: 4px;
+}
+
+.pictures::-webkit-scrollbar-thumb {
+    background: var(--Separadores);
+    border-radius: 4px;
+}
+
+.pictures::-webkit-scrollbar-thumb:hover {
+    background: var(--Background-Color);
+}
+
+.pictures img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 997px) {
+    .divPrincipal {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .izquierda {
+        width: 100%;
+    }
+}

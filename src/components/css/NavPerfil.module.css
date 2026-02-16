@@ -1,0 +1,135 @@
+@import url(General.css);
+@import url(Fuentes.css);
+
+.content {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+
+
+}
+
+.content:hover {
+    cursor: pointer;
+}
+
+.content p {
+    color: var(--Texto-Color);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.contentImg {
+    border-radius: 100%;
+    background-color: var(--Separadores);
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .activo {
+    color: var(--Texto-Color-Complemento)
+}
+
+.noActivo {
+    color: var(--Texto-Color);
+}
+
+.perfilContent,
+.perfilContentBarraExpandida {
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: solid var(--Separadores) 1px;
+    background-color: var(--Background-Color);
+    box-shadow: 4px 4px var(--Secundario-Color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    font-family: "Concert One", sans-serif;
+}
+
+.perfilContent {
+    top: 50;
+    left: 70px;
+}
+
+.perfilContentBarraExpandida {
+
+    top: 50;
+    left: 260px;
+
+}
+
+.perfilContent p,
+.perfilContentBarraExpandida p {
+    color: var(--Texto-Color);
+
+}
+
+.perfilContentImg {
+    width: 200px;
+    height: 200px;
+    background-color: var(--Separadores);
+    border-radius: 100%;
+}
+
+.perfil {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: var(--Boton-Primario);
+    color: var(--Texto-Color);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.perfil:hover {
+    cursor: pointer;
+    background-color: var(--Boton-Secundario);
+    color: var(--Texto-Color);
+}
+
+.cerrar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: var(--Boton-Terciario);
+
+    color: var(--Texto-Color);
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    font-family: "Concert One", sans-serif;
+}
+
+.cerrar:hover {
+    cursor: pointer;
+    background-color: var(--Boton-Cuaternario);
+    color: var(--Texto-Color);
+}
