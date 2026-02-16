@@ -8,7 +8,11 @@
 
 | Vista Principal (Catálogo) | Detalle de Anime (Multimedia & Descarga) | Agregar Anime | Agregar Proximo Anime |
 | :---: | :---: | :---: | :---: |
+<<<<<<< HEAD
 | ![Home](/public/Img/Screenshots/animes_home.jpg) | ![Detalles](/public/Img/Screenshots/animes_detalles.jpg) |  ![Detalles](/public/Img/Screenshots/animes_agregar_anime.jpg) |  ![Detalles](/public/Img/Screenshots/animes_proximos.jpg) | 
+=======
+| ![Home](public/animes_home.jpg) | ![Detalles](public/animes_detalles.jpg) |  ![Detalles](public/animes_agregar_anime.jpg) |  ![Detalles](public/animes_proximos.jpg) | 
+>>>>>>> 14a6f6e3ca5f60adbcb1f2342a8928ba2a1287e2
 
 ---
 
